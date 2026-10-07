@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Software Engineer - Projects, Skills, and Experience">
+    <title>Software Engineer | Portfolio</title>
+    
+    <!-- Google Fonts for Pixel Art & Modern Retro UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Accessible Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ========================================================= -->
+    <!-- MOBILE TOP BAR (Shown on screens < 992px)                 -->
+    <!-- ========================================================= -->
+    <header class="mobile-header" aria-label="Mobile Navigation Bar">
+        <button id="mobile-menu-toggle" class="pixel-btn mobile-menu-btn" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Open Navigation Menu">
+            <span class="menu-icon" aria-hidden="true">&#9776;</span>
+            <span class="menu-text">MENU</span>
+        </button>
+        
+        <a href="#hero" class="mobile-brand" aria-label="Homepage">
+            <span>[TANMAY.EXE]</span>
+        </a>
+
+        <button id="mobile-theme-toggle" class="pixel-toggle-btn mobile-theme-btn" aria-label="Toggle dark mode" type="button" title="Toggle Night/Day Mode">
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- VERTICAL NAVIGATION BAR (Left Side of Screen)             -->
+    <!-- Pixel Art RPG HUD Aesthetic with Full Accessibility       -->
+    <!-- ========================================================= -->
+    <aside id="site-sidebar" class="site-sidebar" aria-label="Main Navigation">
+        
+        <!-- Sidebar Brand / Header -->
+        <div class="sidebar-header">
+            <a href="#hero" class="sidebar-brand-link" aria-label="Homepage">
+                <span class="sidebar-brand-title">[TANMAY.EXE]</span>
+                <span class="sidebar-brand-cursor">_</span>
+            </a>
+            
+            <div class="sidebar-status-pill">
+                <span class="status-dot-blink" aria-hidden="true"></span>
+                <span class="status-text">SYS: READY</span>
+            </div>
+
+            <!-- Mobile drawer close button -->
+            <button id="sidebar-close-btn" class="sidebar-close-btn" aria-label="Close navigation menu" type="button">
+                &#10005;
+            </button>
+        </div>
+
+        <!-- Vertical Navigation Links -->
+        <nav class="sidebar-nav" aria-label="Primary Navigation">
+            <ul class="sidebar-nav-list" role="list">
+                <li class="sidebar-nav-item">
+                    <a href="#hero" class="sidebar-link active" data-section="hero" aria-current="page">
+                        <span class="link-cursor" aria-hidden="true">&#9658;</span>
+                        <span class="link-icon" aria-hidden="true">🏠</span>
+                        <span class="link-text">Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#about" class="sidebar-link" data-section="about">
+                        <span class="link-cursor" aria-hidden="true">&#9658;</span>
+                        <span class="link-icon" aria-hidden="true">👾</span>
+                        <span class="link-text">About Me</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#skills" class="sidebar-link" data-section="skills">
+                        <span class="link-cursor" aria-hidden="true">&#9658;</span>
+                        <span class="link-icon" aria-hidden="true">⚔️</span>
+                        <span class="link-text">Skills</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#timeline" class="sidebar-link" data-section="timeline">
+                        <span class="link-cursor" aria-hidden="true">&#9658;</span>
+                        <span class="link-icon" aria-hidden="true">📜</span>
+                        <span class="link-text">Timeline</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#projects" class="sidebar-link" data-section="projects">
+                        <span class="link-cursor" aria-hidden="true">&#9658;</span>
+                        <span class="link-icon" aria-hidden="true">🚀</span>
+                        <span class="link-text">Projects</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#testimonials" class="sidebar-link" data-section="testimonials">
+                        <span class="link-cursor" aria-hidden="true">&#9658;</span>
+                        <span class="link-icon" aria-hidden="true">⭐</span>
+                        <span class="link-text">Testimonials</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#chat" class="sidebar-link" data-section="chat">
+                        <span class="link-cursor" aria-hidden="true">&#9658;</span>
+                        <span class="link-icon" aria-hidden="true">💬</span>
+                        <span class="link-text">Chat</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#contact" class="sidebar-link" data-section="contact">
+                        <span class="link-cursor" aria-hidden="true">&#9658;</span>
+                        <span class="link-icon" aria-hidden="true">✉</span>
+                        <span class="link-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar Footer & Controls -->
+        <div class="sidebar-footer">
+            <!-- Night Mode Toggle Button (Vertical Sidebar Placement) -->
+            <div class="sidebar-theme-wrapper">
+                <button id="theme-toggle" class="pixel-toggle-btn sidebar-theme-btn" aria-label="Toggle dark mode" type="button" title="Toggle Night/Day Mode">
+                    <span id="theme-icon" class="theme-icon" aria-hidden="true">🌙</span>
+                    <span id="theme-text" class="theme-text">NIGHT MODE</span>
+                </button>
+            </div>
+            
+            <div class="sidebar-stats-badge">
+                <span class="badge-role">LVL 99 DEV</span>
+                <span class="badge-version">v2.6.0</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+    <!-- ========================================================= -->
+    <!-- MAIN SITE CONTENT WRAPPER (Offset for Left Sidebar)       -->
+    <!-- ========================================================= -->
+    <div class="site-main-wrapper">
+
+        <!-- ===================================================== -->
+        <!-- MAIN CONTENT                                          -->
+        <!-- ===================================================== -->
+        <main id="main-content">
+
+        <!-- ===================================================== -->
+        <!-- HERO SECTION                                          -->
+        <!-- Pixel art style + wallpaper portpolio.jpg background  -->
+        <!-- ===================================================== -->
+        <section id="hero" class="hero-section" aria-labelledby="hero-title">
+            <div class="container hero-container">
+                
+                <!-- Left: Welcome, Title, Tagline, Narrative & CTAs -->
+                <div class="hero-content">
+                    
+                    <!-- Retro Status Badge -->
+                    <div class="pixel-badge">
+                        <span class="blink-dot"></span>
+                        <span>STATUS: READY PLAYER 1</span>
+                    </div>
+
+                    <!-- Welcome Title & Subtitle Group -->
+                    <div class="hero-title-group">
+                        <p class="hero-welcome-msg">WELCOME TO THE PORTFOLIO OF</p>
+                        <h1 id="hero-title" class="hero-title">TANMAY C K</h1>
+                        <h2 class="hero-subtitle">
+                            <span>&gt; SOFTWARE ENGINEER</span>
+                            <span class="blink-cursor">_</span>
+                        </h2>
+                    </div>
+
+                    <!-- Pixel Dialogue / RPG Narrative Box -->
+                    <div class="pixel-dialogue-box">
+                        <p class="hero-description">
+                            Crafting robust scalable backend systems, pixel-perfect user experiences, and modern cloud architectures. Turning caffeine and logic into elegant solutions.
+                        </p>
+                    </div>
+
+                    <!-- Pixel Stats Row (Level / HP / XP) -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">LEVEL</span>
+                            <span class="stat-value">99</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">HEALTH (HP)</span>
+                            <div class="stat-bar"><div class="stat-bar-fill"></div></div>
+                            <span class="stat-value">100%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">EXP (CODE)</span>
+                            <div class="stat-bar"><div class="stat-bar-fill xp"></div></div>
+                            <span class="stat-value">MAX</span>
+                        </div>
+                    </div>
+
+                    <!-- Call-to-Action Buttons -->
+                    <div class="hero-cta">
+                        <a href="#projects" class="pixel-btn btn-primary">&#9658; VIEW PROJECTS</a>
+                        <a href="#contact" class="pixel-btn btn-secondary">&#9993; GET IN TOUCH</a>
+                    </div>
+                </div>
+
+                <!-- Right: Pixel Window Frame containing User's Avatar -->
+                <div class="hero-avatar-wrapper">
+                    <div class="pixel-window-card">
+                        <!-- Retro OS Window Bar -->
+                        <div class="window-titlebar">
+                            <span class="window-title">PORTRAIT.EXE</span>
+                            <div class="window-controls">
+                                <span class="window-control-btn close"></span>
+                                <span class="window-control-btn minimize"></span>
+                                <span class="window-control-btn maximize"></span>
+                            </div>
+                        </div>
+
+                        <!-- Pixel Avatar Image with Level Badge -->
+                        <div class="pixel-avatar-container">
+                            <img src="Tanay pp.jpeg" alt="Tanmay C K - Software Engineer" class="pixel-avatar-img">
+                            <div class="pixel-lvl-tag">LVL 99</div>
+                        </div>
+
+                        <!-- Retro Status Footer -->
+                        <div class="window-statusbar">
+                            <span class="status-online"><span class="status-dot"></span> ONLINE</span>
+                            <span>CLASS: DEV</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ABOUT ME SECTION                                      -->
+        <!-- Clean, minimalistic design with pixel-art avatar, bio, -->
+        <!-- career highlights, and personal interests.             -->
+        <!-- ===================================================== -->
+        <section id="about" class="section about-section" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag pixel-font">[02 // PROFILE]</span>
+                    <h2 id="about-title" class="section-title">About Me</h2>
+                    <p class="section-subtitle">A brief look into my background, engineering philosophy, and personal quests.</p>
+                </header>
+
+                <div class="about-grid">
+                    
+                    <!-- Left: Pixel Art Avatar Card & Quick Stats -->
+                    <div class="about-avatar-card pixel-box">
+                        <div class="card-corner-tag">PLAYER INFO</div>
+                        
+                        <!-- Profile Photo in Pixel Art Styled Frame -->
+                        <div class="avatar-frame">
+                            <img src="Tanay pp.jpeg" alt="Profile photo of Tanmay C K" class="avatar-img" width="280" height="280">
+                            <div class="avatar-badge">LVL 99 DEV</div>
+                        </div>
+
+                        <!-- Quick RPG-Style Vitals -->
+                        <div class="avatar-vitals">
+                            <div class="vital-row">
+                                <span class="vital-label">CLASS:</span>
+                                <span class="vital-val">Full-Stack Engineer</span>
+                            </div>
+                            <div class="vital-row">
+                                <span class="vital-label">SPECIALTY:</span>
+                                <span class="vital-val">Distributed APIs &amp; UI</span>
+                            </div>
+                            <div class="vital-row">
+                                <span class="vital-label">LOCATION:</span>
+                                <span class="vital-val">Bengaluru, India 🇮🇳</span>
+                            </div>
+                            <div class="vital-row">
+                                <span class="vital-label">STATUS:</span>
+                                <span class="vital-val text-accent-green">● Open To Opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Bio, Career Highlights, and Personal Interests -->
+                    <div class="about-details">
+                        
+                        <!-- Short Bio / Intro -->
+                        <div class="bio-narrative pixel-box">
+                            <h3 class="bio-heading silkscreen-font">Hey, I'm Tanmay C K 👋</h3>
+                            <p class="bio-text">
+                                I'm a software engineer passionate about architecting high-performance backend systems, reactive web interfaces, and distributed cloud applications. With a foundation built on computer science principles, I bridge the gap between rigorous systems design and intuitive frontend experiences.
+                            </p>
+                            <p class="bio-text">
+                                Whether orchestrating microservices, optimizing database queries, or styling pixel-perfect retro user interfaces, I focus on building robust, maintainable software that delivers measurable value.
+                            </p>
+                        </div>
+
+                        <!-- Career Highlights (Clean, Minimalist Badges) -->
+                        <div class="career-highlights">
+                            <h4 class="sub-heading pixel-font">Career Highlights</h4>
+                            <div class="highlights-grid">
+                                
+                                <div class="highlight-item pixel-box">
+                                    <div class="highlight-icon">⚡</div>
+                                    <div class="highlight-content">
+                                        <h5 class="highlight-title">High-Throughput Systems</h5>
+                                        <p class="highlight-desc">Architected distributed backend pipelines handling millions of events daily with sub-100ms p99 response times.</p>
+                                    </div>
+                                </div>
+
+                                <div class="highlight-item pixel-box">
+                                    <div class="highlight-icon">🛡️</div>
+                                    <div class="highlight-content">
+                                        <h5 class="highlight-title">Resilient Infrastructure</h5>
+                                        <p class="highlight-desc">Containerized mission-critical services using Docker &amp; Kubernetes, cutting deployment incidents by 40%.</p>
+                                    </div>
+                                </div>
+
+                                <div class="highlight-item pixel-box">
+                                    <div class="highlight-icon">🚀</div>
+                                    <div class="highlight-content">
+                                        <h5 class="highlight-title">Full-Stack Craftsmanship</h5>
+                                        <p class="highlight-desc">Delivered production apps spanning React/Next.js, TypeScript, Python, and SQL with comprehensive test suites.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Personal Interests (Minimalist Pixel Chips) -->
+                        <div class="personal-interests">
+                            <h4 class="sub-heading pixel-font">Personal Interests &amp; Quests</h4>
+                            <div class="interests-chips">
+                                <span class="interest-chip pixel-box"><span class="chip-icon">🕹️</span> Retro &amp; Indie Gaming</span>
+                                <span class="interest-chip pixel-box"><span class="chip-icon">☕</span> Specialty Pour-Over Coffee</span>
+                                <span class="interest-chip pixel-box"><span class="chip-icon">⌨️</span> Custom Mechanical Keyboards</span>
+                                <span class="interest-chip pixel-box"><span class="chip-icon">🎧</span> Lo-Fi &amp; Synthwave Music</span>
+                                <span class="interest-chip pixel-box"><span class="chip-icon">🌱</span> Open-Source Software</span>
+                                <span class="interest-chip pixel-box"><span class="chip-icon">📚</span> Distributed Systems Literature</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- SKILLS SECTION                                        -->
+        <!-- Visually engaging layout with 8-bit progress bars,    -->
+        <!-- categorical competency cards, icons, and animations   -->
+        <!-- ===================================================== -->
+        <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag pixel-font">[03 // ABILITIES]</span>
+                    <h2 id="skills-title" class="section-title">Core Competencies &amp; Skills</h2>
+                    <p class="section-subtitle">A breakdown of my technical arsenal, proficiencies, and engineering proficiencies.</p>
+                </header>
+
+                <div class="skills-categories-grid">
+
+                    <!-- ================================================= -->
+                    <!-- Category 1: Programming Languages                 -->
+                    <!-- Represents foundational syntax and systems logic  -->
+                    <!-- ================================================= -->
+                    <div class="skills-category-card pixel-box">
+                        <div class="category-header">
+                            <span class="category-icon" aria-hidden="true">💻</span>
+                            <h3 class="category-title silkscreen-font">Languages</h3>
+                            <span class="category-badge pixel-font">SYNTAX</span>
+                        </div>
+                        <p class="category-note">Core languages used for systems programming, data pipelines &amp; web architecture.</p>
+
+                        <div class="skills-list">
+                            
+                            <!-- Skill Element: Python (95% - Master) -->
+                            <!-- Used for backend services, scripting, data parsing, and algorithmic workflows -->
+                            <div class="skill-row" data-proficiency="95">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">🐍</span> Python</span>
+                                    <span class="skill-pct pixel-font">95%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Python Proficiency">
+                                    <div class="skill-bar-fill progress-python" style="--skill-width: 95%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 95 // MASTER</span>
+                            </div>
+
+                            <!-- Skill Element: TypeScript (92% - Expert) -->
+                            <!-- Primary choice for type-safe scalable frontends and enterprise Node backends -->
+                            <div class="skill-row" data-proficiency="92">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">📘</span> TypeScript</span>
+                                    <span class="skill-pct pixel-font">92%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript Proficiency">
+                                    <div class="skill-bar-fill progress-typescript" style="--skill-width: 92%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 92 // EXPERT</span>
+                            </div>
+
+                            <!-- Skill Element: JavaScript / ESNext (94% - Expert) -->
+                            <!-- Modern asynchronous JavaScript, DOM manipulation, and dynamic client runtimes -->
+                            <div class="skill-row" data-proficiency="94">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">⚡</span> JavaScript (ES6+)</span>
+                                    <span class="skill-pct pixel-font">94%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript Proficiency">
+                                    <div class="skill-bar-fill progress-javascript" style="--skill-width: 94%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 94 // EXPERT</span>
+                            </div>
+
+                            <!-- Skill Element: SQL / Relational Modeling (88% - Advanced) -->
+                            <!-- Complex joins, indexing strategies, query plan profiling, and ACID compliance -->
+                            <div class="skill-row" data-proficiency="88">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">💾</span> SQL &amp; Query Tuning</span>
+                                    <span class="skill-pct pixel-font">88%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="SQL Proficiency">
+                                    <div class="skill-bar-fill progress-sql" style="--skill-width: 88%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 88 // ADVANCED</span>
+                            </div>
+
+                            <!-- Skill Element: Java / OOP (82% - Advanced) -->
+                            <!-- Robust object-oriented architecture, design patterns, and JVM concurrency -->
+                            <div class="skill-row" data-proficiency="82">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">☕</span> Java</span>
+                                    <span class="skill-pct pixel-font">82%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Java Proficiency">
+                                    <div class="skill-bar-fill progress-java" style="--skill-width: 82%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 82 // ADVANCED</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ================================================= -->
+                    <!-- Category 2: Frameworks & Libraries                -->
+                    <!-- Represents application building blocks & engines  -->
+                    <!-- ================================================= -->
+                    <div class="skills-category-card pixel-box">
+                        <div class="category-header">
+                            <span class="category-icon" aria-hidden="true">⚛️</span>
+                            <h3 class="category-title silkscreen-font">Frameworks</h3>
+                            <span class="category-badge pixel-font">RUNTIMES</span>
+                        </div>
+                        <p class="category-note">Modern web ecosystems for crafting reactive frontends &amp; decoupled APIs.</p>
+
+                        <div class="skills-list">
+                            
+                            <!-- Skill Element: React & Next.js (94% - Expert) -->
+                            <!-- Server components, custom hooks, reactive state, and high-performance hydration -->
+                            <div class="skill-row" data-proficiency="94">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">⚛️</span> React / Next.js</span>
+                                    <span class="skill-pct pixel-font">94%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" aria-label="React Proficiency">
+                                    <div class="skill-bar-fill progress-react" style="--skill-width: 94%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 94 // EXPERT</span>
+                            </div>
+
+                            <!-- Skill Element: Node.js & Express (90% - Expert) -->
+                            <!-- Event-driven non-blocking microservices, middleware chains, and streaming -->
+                            <div class="skill-row" data-proficiency="90">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">🟢</span> Node.js &amp; Express</span>
+                                    <span class="skill-pct pixel-font">90%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js Proficiency">
+                                    <div class="skill-bar-fill progress-node" style="--skill-width: 90%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 90 // EXPERT</span>
+                            </div>
+
+                            <!-- Skill Element: FastAPI / Django (88% - Advanced) -->
+                            <!-- Asynchronous Python endpoints, Pydantic validation, ORM models, and OpenAPI docs -->
+                            <div class="skill-row" data-proficiency="88">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">🚀</span> FastAPI &amp; Django</span>
+                                    <span class="skill-pct pixel-font">88%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="FastAPI Proficiency">
+                                    <div class="skill-bar-fill progress-fastapi" style="--skill-width: 88%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 88 // ADVANCED</span>
+                            </div>
+
+                            <!-- Skill Element: Modern CSS & Design Systems (92% - Expert) -->
+                            <!-- Semantic HTML5, CSS Grid/Flexbox, custom properties, and responsive pixel art UI -->
+                            <div class="skill-row" data-proficiency="92">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">🎨</span> CSS3 / Design Tokens</span>
+                                    <span class="skill-pct pixel-font">92%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="CSS Proficiency">
+                                    <div class="skill-bar-fill progress-css" style="--skill-width: 92%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 92 // EXPERT</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ================================================= -->
+                    <!-- Category 3: Tools & Cloud DevOps                  -->
+                    <!-- Represents infrastructure, deployment & telemetry -->
+                    <!-- ================================================= -->
+                    <div class="skills-category-card pixel-box">
+                        <div class="category-header">
+                            <span class="category-icon" aria-hidden="true">🛠️</span>
+                            <h3 class="category-title silkscreen-font">Tools &amp; DevOps</h3>
+                            <span class="category-badge pixel-font">INFRA</span>
+                        </div>
+                        <p class="category-note">Continuous delivery, automated testing, container orchestration &amp; telemetry.</p>
+
+                        <div class="skills-list">
+                            
+                            <!-- Skill Element: Docker & Containerization (90% - Expert) -->
+                            <!-- Multi-stage builds, isolated environments, minimal images, and container security -->
+                            <div class="skill-row" data-proficiency="90">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">🐳</span> Docker &amp; Containers</span>
+                                    <span class="skill-pct pixel-font">90%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Docker Proficiency">
+                                    <div class="skill-bar-fill progress-docker" style="--skill-width: 90%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 90 // EXPERT</span>
+                            </div>
+
+                            <!-- Skill Element: Git & CI/CD Pipelines (95% - Master) -->
+                            <!-- Branching strategies, automated test runners, GitHub Actions, and release workflows -->
+                            <div class="skill-row" data-proficiency="95">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">🐙</span> Git &amp; GitHub Actions</span>
+                                    <span class="skill-pct pixel-font">95%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Git Proficiency">
+                                    <div class="skill-bar-fill progress-git" style="--skill-width: 95%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 95 // MASTER</span>
+                            </div>
+
+                            <!-- Skill Element: AWS Cloud Services (85% - Advanced) -->
+                            <!-- Compute, S3 storage, IAM access control, serverless Lambda, and CloudWatch logs -->
+                            <div class="skill-row" data-proficiency="85">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">☁️</span> AWS Cloud</span>
+                                    <span class="skill-pct pixel-font">85%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="AWS Proficiency">
+                                    <div class="skill-bar-fill progress-aws" style="--skill-width: 85%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 85 // ADVANCED</span>
+                            </div>
+
+                            <!-- Skill Element: Redis & Caching Layers (86% - Advanced) -->
+                            <!-- In-memory caching, distributed session storage, Pub/Sub channels, and rate limiting -->
+                            <div class="skill-row" data-proficiency="86">
+                                <div class="skill-meta">
+                                    <span class="skill-name"><span class="skill-symbol">⚡</span> Redis &amp; In-Memory Cache</span>
+                                    <span class="skill-pct pixel-font">86%</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="Redis Proficiency">
+                                    <div class="skill-bar-fill progress-redis" style="--skill-width: 86%;"></div>
+                                </div>
+                                <span class="skill-tier mono-font">LVL 86 // ADVANCED</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ================================================= -->
+                <!-- Core Competencies Matrix (Styled Interactive Grid)-->
+                <!-- Highlights architectural principles and domains   -->
+                <!-- ================================================= -->
+                <div class="competencies-matrix pixel-box">
+                    <div class="matrix-header">
+                        <span class="matrix-badge pixel-font">ARCHITECTURE &amp; METHODOLOGY</span>
+                        <h3 class="matrix-title silkscreen-font">Core Engineering Competencies</h3>
+                    </div>
+
+                    <div class="matrix-grid">
+                        
+                        <!-- Competency 1: Distributed Systems -->
+                        <div class="matrix-chip">
+                            <span class="chip-status-dot"></span>
+                            <div class="chip-info">
+                                <strong class="chip-title">Distributed Systems</strong>
+                                <span class="chip-sub">Fault-tolerant &amp; decentralized designs</span>
+                            </div>
+                        </div>
+
+                        <!-- Competency 2: RESTful & GraphQL APIs -->
+                        <div class="matrix-chip">
+                            <span class="chip-status-dot"></span>
+                            <div class="chip-info">
+                                <strong class="chip-title">REST &amp; GraphQL APIs</strong>
+                                <span class="chip-sub">Stateless contracts &amp; typed schemas</span>
+                            </div>
+                        </div>
+
+                        <!-- Competency 3: Database Optimization -->
+                        <div class="matrix-chip">
+                            <span class="chip-status-dot"></span>
+                            <div class="chip-info">
+                                <strong class="chip-title">Database Optimization</strong>
+                                <span class="chip-sub">Indexing, indexing &amp; connection pools</span>
+                            </div>
+                        </div>
+
+                        <!-- Competency 4: Test-Driven Development -->
+                        <div class="matrix-chip">
+                            <span class="chip-status-dot"></span>
+                            <div class="chip-info">
+                                <strong class="chip-title">TDD &amp; Unit Testing</strong>
+                                <span class="chip-sub">Jest, Pytest &amp; integration coverage</span>
+                            </div>
+                        </div>
+
+                        <!-- Competency 5: Microservices & Event Streams -->
+                        <div class="matrix-chip">
+                            <span class="chip-status-dot"></span>
+                            <div class="chip-info">
+                                <strong class="chip-title">Event-Driven Architecture</strong>
+                                <span class="chip-sub">Queues, async workers &amp; message brokers</span>
+                            </div>
+                        </div>
+
+                        <!-- Competency 6: Performance Profiling -->
+                        <div class="matrix-chip">
+                            <span class="chip-status-dot"></span>
+                            <div class="chip-info">
+                                <strong class="chip-title">System Performance Tuning</strong>
+                                <span class="chip-sub">Profiling, latency reduction &amp; caching</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- TIMELINE COMPONENT                                    -->
+        <!-- Minimalistic, rounded cards with smooth CSS           -->
+        <!-- transitions, milestones, education & major projects.  -->
+        <!-- ===================================================== -->
+        <section id="timeline" class="section timeline-section" aria-labelledby="timeline-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag pixel-font">[04 // JOURNEY]</span>
+                    <h2 id="timeline-title" class="section-title">Milestones &amp; Timeline</h2>
+                    <p class="section-subtitle">Chronological progression of education, career breakthroughs, and key engineering achievements.</p>
+                </header>
+
+                <div class="timeline-wrapper">
+                    <!-- Central connecting spine line -->
+                    <div class="timeline-spine" aria-hidden="true"></div>
+
+                    <!-- Milestone 1: Career Peak -->
+                    <article class="timeline-card rounded-box">
+                        <div class="timeline-marker-circle" aria-hidden="true">
+                            <span class="marker-dot"></span>
+                        </div>
+                        <div class="timeline-header-group">
+                            <span class="timeline-badge pixel-font">CURRENT ROLE</span>
+                            <time class="timeline-date mono-font">2024 - PRESENT</time>
+                        </div>
+                        <h3 class="timeline-heading silkscreen-font">Senior Software Engineer</h3>
+                        <h4 class="timeline-subheading">Distributed Cloud Systems</h4>
+                        <p class="timeline-summary">
+                            Leading architecture of mission-critical event ingestion engines. Spearheaded the migration from monolithic services to an asynchronous microservices pipeline handling 50M+ requests daily with 99.99% availability.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="t-tag">Go</span>
+                            <span class="t-tag">Kafka</span>
+                            <span class="t-tag">Kubernetes</span>
+                            <span class="t-tag">AWS</span>
+                        </div>
+                    </article>
+
+                    <!-- Milestone 2: Full-Stack Role -->
+                    <article class="timeline-card rounded-box">
+                        <div class="timeline-marker-circle" aria-hidden="true">
+                            <span class="marker-dot"></span>
+                        </div>
+                        <div class="timeline-header-group">
+                            <span class="timeline-badge pixel-font">CAREER MILESTONE</span>
+                            <time class="timeline-date mono-font">2023 - 2024</time>
+                        </div>
+                        <h3 class="timeline-heading silkscreen-font">Full-Stack Software Engineer</h3>
+                        <h4 class="timeline-subheading">Enterprise Web Platforms</h4>
+                        <p class="timeline-summary">
+                            Architected resilient full-stack applications with React, Next.js, and Node.js. Optimized client-side render cycles to improve Core Web Vitals scores by 42% across mobile and desktop.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="t-tag">TypeScript</span>
+                            <span class="t-tag">React / Next.js</span>
+                            <span class="t-tag">PostgreSQL</span>
+                            <span class="t-tag">Docker</span>
+                        </div>
+                    </article>
+
+                    <!-- Milestone 3: Major Project Launch -->
+                    <article class="timeline-card rounded-box">
+                        <div class="timeline-marker-circle" aria-hidden="true">
+                            <span class="marker-dot"></span>
+                        </div>
+                        <div class="timeline-header-group">
+                            <span class="timeline-badge pixel-font">MAJOR PROJECT</span>
+                            <time class="timeline-date mono-font">2023</time>
+                        </div>
+                        <h3 class="timeline-heading silkscreen-font">Open-Source Distributed Cache Engine</h3>
+                        <h4 class="timeline-subheading">Global Community Release</h4>
+                        <p class="timeline-summary">
+                            Engineered an in-memory distributed key-value store with consistent hashing, LRU eviction, and automatic replica failover. Adopted by over 1,200 developers with 1.5k+ GitHub stars.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="t-tag">Python</span>
+                            <span class="t-tag">Redis Protocol</span>
+                            <span class="t-tag">System Design</span>
+                        </div>
+                    </article>
+
+                    <!-- Milestone 4: Education & Foundation -->
+                    <article class="timeline-card rounded-box">
+                        <div class="timeline-marker-circle" aria-hidden="true">
+                            <span class="marker-dot"></span>
+                        </div>
+                        <div class="timeline-header-group">
+                            <span class="timeline-badge pixel-font">ACADEMIC FOUNDATION</span>
+                            <time class="timeline-date mono-font">2019 - 2023</time>
+                        </div>
+                        <h3 class="timeline-heading silkscreen-font">B.S. in Computer Science &amp; Engineering</h3>
+                        <h4 class="timeline-subheading">University Institute of Technology</h4>
+                        <p class="timeline-summary">
+                            Graduated First Class with Distinction. Focused on Algorithms, Distributed Operating Systems, Database Management Systems, and Computer Networks. Led university coding club and hackathons.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="t-tag">Data Structures</span>
+                            <span class="t-tag">Distributed OS</span>
+                            <span class="t-tag">GPA: 3.9 / 4.0</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PROJECTS SECTION                                      -->
+        <!-- Displays interactive project thumbnails with click    -->
+        <!-- triggers that open an in-depth modal detailed view    -->
+        <!-- ===================================================== -->
+        <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag pixel-font">[05 // PORTFOLIO]</span>
+                    <h2 id="projects-title" class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Click on any project thumbnail or card to launch the comprehensive architecture and demo view.</p>
+                </header>
+
+                <!-- Responsive Grid of Project Cards with Thumbnails -->
+                <div class="projects-grid">
+
+                    <!-- =================================================== -->
+                    <!-- Project 1: CloudPulse Engine                        -->
+                    <!-- Note: Clicking the card or thumbnail triggers modal -->
+                    <!-- with ID 'project-1' via dataset attributes          -->
+                    <!-- =================================================== -->
+                    <article class="project-card rounded-box" data-project-id="cloudpulse">
+                        <!-- Clickable thumbnail container -->
+                        <div class="project-thumbnail-wrapper" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open detailed view for CloudPulse">
+                            <div class="thumbnail-overlay">
+                                <span class="overlay-btn pixel-font">&#9658; VIEW DETAILS</span>
+                            </div>
+                            <div class="thumbnail-canvas canvas-cloudpulse">
+                                <div class="retro-badge-top">SYSTEMS</div>
+                                <div class="canvas-icon-cluster">
+                                    <span class="pulse-ring"></span>
+                                    <span class="canvas-symbol">⚡</span>
+                                </div>
+                                <span class="canvas-caption mono-font">LATENCY: 12ms // 100K RPS</span>
+                            </div>
+                        </div>
+
+                        <!-- Card Meta & Content -->
+                        <div class="project-card-body">
+                            <div class="project-card-header">
+                                <h3 class="project-card-title silkscreen-font">CloudPulse Engine</h3>
+                                <span class="project-type-tag pixel-font">DISTRIBUTED</span>
+                            </div>
+                            <p class="project-card-desc">
+                                High-throughput real-time telemetry streaming service capable of parsing 100,000 incoming metric packets per second with distributed buffer queues.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="tech-pill">Go</span>
+                                <span class="tech-pill">Redis</span>
+                                <span class="tech-pill">Docker</span>
+                                <span class="tech-pill">WebSocket</span>
+                            </div>
+                            <div class="project-actions">
+                                <button type="button" class="pixel-btn btn-primary open-details-btn" data-project="cloudpulse">
+                                    DETAILS
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="pixel-btn btn-secondary">
+                                    CODE ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- =================================================== -->
+                    <!-- Project 2: NexusFlow Automation                     -->
+                    <!-- Note: Connected to 'nexusflow' data record          -->
+                    <!-- =================================================== -->
+                    <article class="project-card rounded-box" data-project-id="nexusflow">
+                        <!-- Clickable thumbnail container -->
+                        <div class="project-thumbnail-wrapper" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open detailed view for NexusFlow">
+                            <div class="thumbnail-overlay">
+                                <span class="overlay-btn pixel-font">&#9658; VIEW DETAILS</span>
+                            </div>
+                            <div class="thumbnail-canvas canvas-nexusflow">
+                                <div class="retro-badge-top">FULL-STACK</div>
+                                <div class="canvas-icon-cluster">
+                                    <span class="canvas-symbol">🔄</span>
+                                </div>
+                                <span class="canvas-caption mono-font">DAG PIPELINES // REACT</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-card-header">
+                                <h3 class="project-card-title silkscreen-font">NexusFlow Studio</h3>
+                                <span class="project-type-tag pixel-font">SAAS</span>
+                            </div>
+                            <p class="project-card-desc">
+                                Visual workflow automation pipeline for enterprise orchestration. Drag-and-drop node graph canvas with automated rollback capabilities.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="tech-pill">Next.js</span>
+                                <span class="tech-pill">TypeScript</span>
+                                <span class="tech-pill">PostgreSQL</span>
+                                <span class="tech-pill">Tailwind</span>
+                            </div>
+                            <div class="project-actions">
+                                <button type="button" class="pixel-btn btn-primary open-details-btn" data-project="nexusflow">
+                                    DETAILS
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="pixel-btn btn-secondary">
+                                    CODE ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- =================================================== -->
+                    <!-- Project 3: RetroByte Arcade Engine                  -->
+                    <!-- Note: Connected to 'retrobyte' data record          -->
+                    <!-- =================================================== -->
+                    <article class="project-card rounded-box" data-project-id="retrobyte">
+                        <!-- Clickable thumbnail container -->
+                        <div class="project-thumbnail-wrapper" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open detailed view for RetroByte">
+                            <div class="thumbnail-overlay">
+                                <span class="overlay-btn pixel-font">&#9658; VIEW DETAILS</span>
+                            </div>
+                            <div class="thumbnail-canvas canvas-retrobyte">
+                                <div class="retro-badge-top">GAME ENGINE</div>
+                                <div class="canvas-icon-cluster">
+                                    <span class="canvas-symbol">🕹️</span>
+                                </div>
+                                <span class="canvas-caption mono-font">60 FPS // WEB AUDIO API</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-card-header">
+                                <h3 class="project-card-title silkscreen-font">RetroByte Arcade</h3>
+                                <span class="project-type-tag pixel-font">CREATIVE</span>
+                            </div>
+                            <p class="project-card-desc">
+                                In-browser 8-bit game engine &amp; chiptune synthesizer. Features custom tilemap physics, sprite collision detection, and programmable FM sound synthesizer.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">Canvas 2D</span>
+                                <span class="tech-pill">Web Audio</span>
+                                <span class="tech-pill">WebAssembly</span>
+                            </div>
+                            <div class="project-actions">
+                                <button type="button" class="pixel-btn btn-primary open-details-btn" data-project="retrobyte">
+                                    DETAILS
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="pixel-btn btn-secondary">
+                                    CODE ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- =================================================== -->
+                    <!-- Project 4: QueryShield Optimizer                    -->
+                    <!-- Note: Connected to 'queryshield' data record        -->
+                    <!-- =================================================== -->
+                    <article class="project-card rounded-box" data-project-id="queryshield">
+                        <!-- Clickable thumbnail container -->
+                        <div class="project-thumbnail-wrapper" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open detailed view for QueryShield">
+                            <div class="thumbnail-overlay">
+                                <span class="overlay-btn pixel-font">&#9658; VIEW DETAILS</span>
+                            </div>
+                            <div class="thumbnail-canvas canvas-queryshield">
+                                <div class="retro-badge-top">DATABASE</div>
+                                <div class="canvas-icon-cluster">
+                                    <span class="canvas-symbol">🛡️</span>
+                                </div>
+                                <span class="canvas-caption mono-font">EXPLAIN ANALYZE // CACHING</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-card-header">
+                                <h3 class="project-card-title silkscreen-font">QueryShield Optimizer</h3>
+                                <span class="project-type-tag pixel-font">PERFORMANCE</span>
+                            </div>
+                            <p class="project-card-desc">
+                                Automated SQL query profiling and caching proxy. Intercepts slow queries, evaluates execution plans, and generates optimal composite indexing suggestions.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">FastAPI</span>
+                                <span class="tech-pill">PostgreSQL</span>
+                                <span class="tech-pill">Redis</span>
+                            </div>
+                            <div class="project-actions">
+                                <button type="button" class="pixel-btn btn-primary open-details-btn" data-project="queryshield">
+                                    DETAILS
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="pixel-btn btn-secondary">
+                                    CODE ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- DETAILED PROJECT MODAL DIALOG                         -->
+        <!-- Opens when any project thumbnail or button is clicked -->
+        <!-- ===================================================== -->
+        <dialog id="project-detail-modal" class="project-detail-modal" aria-labelledby="modal-project-title">
+            <div class="modal-window rounded-box pixel-box">
+                <!-- Modal Title Bar -->
+                <div class="modal-header">
+                    <div class="modal-header-titles">
+                        <span id="modal-project-tag" class="pixel-font modal-tag">PROJECT // SPEC</span>
+                        <h3 id="modal-project-title" class="silkscreen-font modal-title">Project Name</h3>
+                    </div>
+                    <button id="modal-close-btn" class="modal-close-btn pixel-btn" type="button" aria-label="Close project details">
+                        ✕
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div id="modal-project-preview" class="modal-preview-box">
+                        <!-- Dynamic project visual banner injected here -->
+                    </div>
+
+                    <div class="modal-content-grid">
+                        <div class="modal-main-desc">
+                            <h4 class="pixel-font modal-subtitle">Project Overview &amp; Architecture</h4>
+                            <p id="modal-project-desc" class="modal-text">Detailed explanation...</p>
+
+                            <h4 class="pixel-font modal-subtitle">Key Engineering Highlights</h4>
+                            <ul id="modal-project-highlights" class="modal-list">
+                                <!-- Dynamic bullet points -->
+                            </ul>
+                        </div>
+
+                        <div class="modal-meta-sidebar">
+                            <div class="meta-block">
+                                <span class="meta-label pixel-font">TECH STACK</span>
+                                <div id="modal-project-stack" class="modal-stack-tags"></div>
+                            </div>
+                            <div class="meta-block">
+                                <span class="meta-label pixel-font">STATUS</span>
+                                <span id="modal-project-status" class="meta-val mono-font">SHIPPED &bull; v1.4</span>
+                            </div>
+                            <div class="meta-block modal-cta-group">
+                                <a id="modal-demo-link" href="#" target="_blank" rel="noopener noreferrer" class="pixel-btn btn-primary modal-action-btn">
+                                    LIVE DEMO ↗
+                                </a>
+                                <a id="modal-code-link" href="#" target="_blank" rel="noopener noreferrer" class="pixel-btn btn-secondary modal-action-btn">
+                                    SOURCE CODE ↗
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- ===================================================== -->
+        <!-- VIDEO HIGHLIGHT / PORTFOLIO DEMO REEL                 -->
+        <!-- Responsive with CSS aspect-ratio & retro CRT styling  -->
+        <!-- ===================================================== -->
+        <section id="video" class="section video-section" aria-labelledby="video-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag pixel-font">[06 // SPOTLIGHT]</span>
+                    <h2 id="video-title" class="section-title">Video Introduction &amp; Project Demo</h2>
+                    <p class="section-subtitle">A high-definition engineering walkthrough showcasing system design, code walkthroughs, and live application demos.</p>
+                </header>
+
+                <!-- Retro CRT Monitor Frame -->
+                <div class="video-monitor-wrapper pixel-box rounded-box">
+                    <div class="monitor-top-bar">
+                        <div class="monitor-title-group">
+                            <span class="recording-dot"></span>
+                            <span class="monitor-title pixel-font">FEED: PORTFOLIO_WALKTHROUGH.MP4</span>
+                        </div>
+                        <div class="monitor-stats mono-font">
+                            <span>1080p60</span> &bull; <span>STEREO</span> &bull; <span class="text-accent-green">LIVE</span>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Video Container using CSS aspect-ratio -->
+                    <div class="video-responsive-container">
+                        <iframe 
+                            class="responsive-video-iframe" 
+                            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                            title="Software Engineer Portfolio Demo &amp; Code Walkthrough" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <!-- Monitor Controls & Explanatory Caption -->
+                    <div class="monitor-footer">
+                        <div class="monitor-dials" aria-hidden="true">
+                            <span class="dial-knob"></span>
+                            <span class="dial-knob"></span>
+                            <span class="power-switch active">ON</span>
+                        </div>
+                        <p class="video-caption">
+                            <strong>Video Caption:</strong> An interactive engineering walkthrough explaining distributed systems architecture, clean code practices, and the development workflow of my featured projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- TESTIMONIALS SECTION                                  -->
+        <!-- Card-like containers, subtle drop shadows, rounded    -->
+        <!-- corners, clean and readable typography matching theme -->
+        <!-- ===================================================== -->
+        <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag pixel-font">[07 // ENDORSEMENTS]</span>
+                    <h2 id="testimonials-title" class="section-title">Peer &amp; Client Feedback</h2>
+                    <p class="section-subtitle">Real testimonials and recommendations from engineering leaders, product managers, and collaborators.</p>
+                </header>
+                
+                <!-- Testimonials Grid with Rounded Cards & Subtle Drop Shadows -->
+                <div class="testimonials-grid">
+                    
+                    <!-- Testimonial 1 -->
+                    <article class="testimonial-card rounded-box">
+                        <div class="testimonial-card-header">
+                            <div class="rating-stars" aria-label="5 out of 5 stars">
+                                ★★★★★
+                            </div>
+                            <span class="testimonial-badge pixel-font">ENGINEERING LEAD</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            “Tanmay possesses a rare balance of deep backend systems acumen and an eye for polished user interfaces. During our cloud migration, he eliminated latency bottlenecks and built bulletproof API contracts that our entire engineering team still relies on daily.”
+                        </blockquote>
+                        <footer class="testimonial-author-meta">
+                            <div class="author-avatar-chip">
+                                <span class="author-initials">AK</span>
+                            </div>
+                            <div class="author-details">
+                                <cite class="author-name silkscreen-font">Arjun Kulkarni</cite>
+                                <span class="author-role mono-font">VP of Engineering &bull; CloudScale Labs</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Testimonial 2 -->
+                    <article class="testimonial-card rounded-box">
+                        <div class="testimonial-card-header">
+                            <div class="rating-stars" aria-label="5 out of 5 stars">
+                                ★★★★★
+                            </div>
+                            <span class="testimonial-badge pixel-font">PRODUCT ARCHITECT</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            “Working with Tanmay on complex data visualization pipelines was an absolute pleasure. He asks the right architectural questions upfront, writes remarkably clean and documented code, and delivers ahead of sprint deadlines without compromising test coverage.”
+                        </blockquote>
+                        <footer class="testimonial-author-meta">
+                            <div class="author-avatar-chip">
+                                <span class="author-initials">SL</span>
+                            </div>
+                            <div class="author-details">
+                                <cite class="author-name silkscreen-font">Sophia Lin</cite>
+                                <span class="author-role mono-font">Principal Product Manager &bull; NexusFlow</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Testimonial 3 -->
+                    <article class="testimonial-card rounded-box">
+                        <div class="testimonial-card-header">
+                            <div class="rating-stars" aria-label="5 out of 5 stars">
+                                ★★★★★
+                            </div>
+                            <span class="testimonial-badge pixel-font">SENIOR PEER</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            “Tanmay is the teammate everyone wants in high-stakes war rooms. He diagnosed an elusive memory leak under high concurrency within an hour, and his infectious passion for developer tooling and retro design elevates the morale of everyone around him.”
+                        </blockquote>
+                        <footer class="testimonial-author-meta">
+                            <div class="author-avatar-chip">
+                                <span class="author-initials">MR</span>
+                            </div>
+                            <div class="author-details">
+                                <cite class="author-name silkscreen-font">Marcus Reed</cite>
+                                <span class="author-role mono-font">Staff DevOps Specialist &bull; OpenStream</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- AI CHAT SECTION (Interactive Persona of Tanmay)       -->
+        <!-- Chat window with input field, message display area,   -->
+        <!-- prompt suggestions, and simulated AI responses.       -->
+        <!-- ===================================================== -->
+        <section id="chat" class="section chat-section" aria-labelledby="chat-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag pixel-font">[08 // INTERACTIVE]</span>
+                    <h2 id="chat-title" class="section-title">Chat with AI Tanmay</h2>
+                    <p class="section-subtitle">Interact with an AI clone trained on Tanmay's engineering experience, skills, projects, and career background.</p>
+                </header>
+                
+                <!-- Retro Pixel Chat Window -->
+                <div class="chat-terminal-card pixel-box rounded-box">
+                    
+                    <!-- Chat Window Titlebar -->
+                    <div class="terminal-bar">
+                        <div class="terminal-title-group">
+                            <span class="status-dot-blink"></span>
+                            <span class="terminal-title pixel-font">[AI_TANMAY.EXE] - NEURAL ASSISTANT</span>
+                        </div>
+                        <div class="terminal-controls">
+                            <span class="terminal-status-text mono-font">ONLINE &bull; MODEL: DEV-4.0</span>
+                            <span class="terminal-btn close" aria-hidden="true"></span>
+                            <span class="terminal-btn minimize" aria-hidden="true"></span>
+                            <span class="terminal-btn maximize" aria-hidden="true"></span>
+                        </div>
+                    </div>
+
+                    <!-- Chat Message Display Area -->
+                    <div id="chat-messages" class="chat-messages-display" role="log" aria-live="polite">
+                        <!-- Bot Welcome Message -->
+                        <div class="chat-msg bot-msg">
+                            <div class="msg-avatar pixel-font">AI</div>
+                            <div class="msg-bubble">
+                                <span class="msg-sender pixel-font">AI Tanmay:</span>
+                                <p class="msg-text">
+                                    Hello traveler! 👋 I'm the digital neural clone of Tanmay C K. Ask me anything about my full-stack architecture, projects like CloudPulse, favorite technologies, or how we can collaborate!
+                                </p>
+                                <time class="msg-time mono-font">Just now</time>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Suggested Prompts Row -->
+                    <div class="chat-suggestions-wrapper">
+                        <span class="suggestions-label pixel-font">SUGGESTIONS:</span>
+                        <div class="suggestions-chips">
+                            <button type="button" class="suggestion-chip pixel-font" data-prompt="What are your core engineering skills?">
+                                ► Core Skills?
+                            </button>
+                            <button type="button" class="suggestion-chip pixel-font" data-prompt="Tell me about your featured projects like CloudPulse.">
+                                ► Tell me about CloudPulse
+                            </button>
+                            <button type="button" class="suggestion-chip pixel-font" data-prompt="What is your engineering philosophy?">
+                                ► Engineering Philosophy?
+                            </button>
+                            <button type="button" class="suggestion-chip pixel-font" data-prompt="How can I get in touch or hire you?">
+                                ► How to hire you?
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Chat Input Form -->
+                    <form id="ai-chat-form" class="chat-input-form" autocomplete="off">
+                        <div class="chat-input-row">
+                            <span class="input-prompt-symbol pixel-font">&gt;</span>
+                            <input 
+                                type="text" 
+                                id="ai-chat-input" 
+                                class="chat-text-input" 
+                                placeholder="Ask AI Tanmay something (e.g. Tell me about your background)..." 
+                                aria-label="Type message to AI Tanmay" 
+                                required>
+                            <button type="submit" id="ai-chat-submit" class="pixel-btn btn-primary chat-submit-btn">
+                                <span>SEND</span> <span class="btn-arrow" aria-hidden="true">&#9658;</span>
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONTACT SECTION                                       -->
+        <!-- ===================================================== -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">
+                    Whether you have an opportunity, a question, or just want to connect, feel free to reach out!
+                </p>
+
+                <!-- Contact Options / Links -->
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="btn btn-primary pixel-btn">Say Hello</a>
+                </div>
+
+                <!-- Social Links Placeholder -->
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">Twitter</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER                                                    -->
+    <!-- ========================================================= -->
+    <footer id="site-footer" class="site-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Software Engineer. All rights reserved.</p>
+            <p class="footer-attribution">Designed &amp; Built with semantic HTML &amp; modern CSS.</p>
+        </div>
+    </footer>
+
+    </div> <!-- End .site-main-wrapper -->
+
+    <!-- Interactive Script -->
+    <script src="script.js"></script>
+</body>
+</html>
